@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adika Beauty</title>
+
+<style>
+:root{
+    --emerald:#0f4f46;
+    --emerald-dark:#083730;
+    --gold:#d4af37;
+    --white:#ffffff;
+    --light:#f8f8f8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background:var(--white);
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(rgba(8,55,48,.75), rgba(8,55,48,.75)),
+    url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+header h1{
+    font-size:4rem;
+    letter-spacing:3px;
+    color:white;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:var(--gold);
+    color:var(--emerald-dark);
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--emerald);
+    margin-bottom:40px;
+    font-size:2.2rem;
+}
+
+.about{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+.price-card{
+    background:white;
+    border:2px solid var(--gold);
+    border-radius:20px;
+    padding:30px;
+    max-width:400px;
+    margin:auto;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.price-card h3{
+    color:var(--emerald);
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:2.5rem;
+    color:var(--gold);
+    font-weight:bold;
+}
+
+.booking{
+    background:var(--emerald);
+    color:white;
+    text-align:center;
+}
+
+.booking h2{
+    color:white;
+}
+
+.contact-box{
+    background:white;
+    color:#333;
+    max-width:600px;
+    margin:30px auto 0;
+    padding:30px;
+    border-radius:20px;
+}
+
+footer{
+    background:var(--emerald-dark);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--gold);
+    margin:15px auto 0;
+    border-radius:10px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.8rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Adika Beauty</h1>
+    <p>Krása, elegancia a profesionálna starostlivosť</p>
+
+    <a href="#kontakt" class="btn">Objednať sa</a>
+</header>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">O salóne</h2>
+        <div class="gold-line"></div>
+
+        <div class="about">
+            <p>
+                Vitajte v Adika Beauty. Ponúkame profesionálne
+                kozmetické služby v príjemnom a elegantnom prostredí.
+                Každá klientka je jedinečná a preto ku každej
+                pristupujeme individuálne.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section style="background:#fafafa;">
+    <div class="container">
+        <h2 class="section-title">Cenník</h2>
+        <div class="gold-line"></div>
+
+        <div class="price-card">
+            <h3>Lash Lifting</h3>
+            <div class="price">45 €</div>
+            <p>Prirodzene zvýraznené a natočené riasy.</p>
+        </div>
+    </div>
+</section>
+
+<section class="booking" id="kontakt">
+    <div class="container">
+        <h2>Objednávanie</h2>
+
+        <p>
+            Fungujeme výhradne na objednávky.
+            Termín si môžete rezervovať telefonicky alebo správou.
+        </p>
+
+        <div class="contact-box">
+            <h3>Kontakt</h3>
+
+            <p><strong>Telefón:</strong> +421 XXX XXX XXX</p>
+            <p><strong>Instagram:</strong> @adikabeauty</p>
+            <p><strong>E-mail:</strong> info@adikabeauty.sk</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Adika Beauty • Všetky práva vyhradené
+</footer>
+
+</body>
+</html>
